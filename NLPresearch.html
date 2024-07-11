@@ -1,0 +1,142 @@
+<html><head><base href="https://ml-ekm.org/research/nlp"><title>Natural Language Processing for Knowledge Extraction - ML-EKM Research</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  nav {
+    background-color: #f4f4f4;
+    padding: 1em;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  main {
+    padding: 20px 0;
+  }
+  .research-highlight {
+    background-color: #f0f8ff;
+    border-left: 5px solid #0066cc;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .code-snippet {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Natural Language Processing for Knowledge Extraction</h1>
+    <p>Unlocking the Power of Unstructured Text Data in Enterprises</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="https://ml-ekm.org">Home</a></li>
+      <li><a href="https://ml-ekm.org/research">Research</a></li>
+      <li><a href="https://ml-ekm.org/publications">Publications</a></li>
+      <li><a href="https://ml-ekm.org/team">Team</a></li>
+      <li><a href="https://ml-ekm.org/contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h2>Overview</h2>
+    <p>At ML-EKM, our Natural Language Processing (NLP) research focuses on developing advanced techniques to automatically extract valuable knowledge from unstructured text data. This includes documents, emails, social media content, and other text-based sources within enterprise environments.</p>
+    
+    <div class="research-highlight">
+      <h3>Key Research Areas</h3>
+      <ul>
+        <li>Named Entity Recognition (NER) for enterprise-specific entities</li>
+        <li>Relation Extraction to identify connections between entities</li>
+        <li>Text Summarization for efficient information digestion</li>
+        <li>Sentiment Analysis for customer feedback and internal communications</li>
+        <li>Topic Modeling to organize large document collections</li>
+      </ul>
+    </div>
+    
+    <h2>Current Projects</h2>
+    
+    <h3>1. Enterprise-Specific Named Entity Recognition</h3>
+    <p>We're developing customizable NER models that can be easily adapted to recognize domain-specific entities in various industries. This project aims to improve the accuracy of entity extraction in specialized enterprise contexts.</p>
+    <div class="code-snippet">
+# Example of using our Enterprise NER model
+from ml_ekm.ner import EnterpriseNER
+
+ner_model = EnterpriseNER.load("finance_model")
+text = "ACME Corp reported Q2 earnings of $2.5B, exceeding analyst expectations."
+entities = ner_model.extract_entities(text)
+
+print(entities)
+# Output: [('ACME Corp', 'ORG'), ('Q2', 'TIME'), ('$2.5B', 'MONEY')]
+    </div>
+    
+    <h3>2. Intelligent Document Summarization</h3>
+    <p>Our team is working on advanced text summarization techniques that can distill key information from lengthy documents, reports, and email threads. This research aims to save time and improve information retention for busy professionals.</p>
+    
+    <h3>3. Cross-lingual Knowledge Extraction</h3>
+    <p>As enterprises become increasingly global, we're developing methods to extract and align knowledge across multiple languages. This project focuses on creating a unified knowledge base from multilingual sources.</p>
+    
+    <h2>Recent Publications</h2>
+    <ul>
+      <li>Smith, J. et al. (2023). "Adaptive NER for Dynamic Enterprise Environments." Proceedings of ACL 2023.</li>
+      <li>Johnson, A. &amp; Lee, S. (2022). "Multi-document Summarization with Attention-based Graph Neural Networks." EMNLP 2022.</li>
+      <li>Garcia, M. et al. (2022). "CrossLinguo: A Framework for Cross-lingual Knowledge Alignment in Enterprises." COLING 2022.</li>
+    </ul>
+    
+    <h2>Collaborate with Us</h2>
+    <p>We're always looking for industry partners to collaborate on real-world NLP applications. If you're interested in applying our research to your enterprise or contributing to our ongoing projects, we'd love to hear from you.</p>
+    <a href="https://ml-ekm.org/collaborate" class="cta-button">Explore Collaboration Opportunities</a>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Machine Learning Institute for Enterprise Knowledge Management. All rights reserved.</p>
+  </footer>
+</body>
+</html>
